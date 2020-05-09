@@ -36,6 +36,7 @@ _**this text is bold and italic**_
 First header | second header
 -------------|---------------
 content from cell 1 | content from cell 2
+col 1, row 2 | col 2, row 2
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
