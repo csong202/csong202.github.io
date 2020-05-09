@@ -11,9 +11,17 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# This is my first header
-## _I have created an italic header_
-### now there is a third header
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
+
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
 
 - Bulleted
 - List
@@ -37,6 +45,19 @@ First header | second header
 -------------|---------------
 content from cell 1 | content from cell 2
 col 1, row 2 | col 2, row 2
+
+### unordered list
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+  
+### ordered list
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
