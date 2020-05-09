@@ -31,7 +31,8 @@ _**this text is bold and italic**_
 
 '<here is some inline code>'
 
-##now im making a table
+## now im making a table
+
 First header | second header
 -------------|---------------
 content from cell 1 | content from cell 2
