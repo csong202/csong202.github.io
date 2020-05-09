@@ -26,6 +26,17 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+# this is a header
+_**this text is bold and italic**_
+
+'<here is some inline code>'
+
+##now im making a table
+First header | second header
+-------------|---------------
+content from cell 1 | content from cell 2
+
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
