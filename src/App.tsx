@@ -1,30 +1,28 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { NavBar } from "./components";
+import { About, Contact, Projects, WorkExperience } from "./pages";
 import "./App.css";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: (
-			<div>
-				<h1>test test</h1>
-			</div>
-		),
+		element: <NavBar />,
 	},
 	{
 		path: "about",
-		element: <h1>about</h1>,
+		element: <About />,
 	},
 	{
 		path: "work-experience",
-		element: <h1>work-experience</h1>,
+		element: <WorkExperience />,
 	},
 	{
 		path: "projects",
-		element: <h1>projects</h1>,
+		element: <Projects />,
 	},
 	{
 		path: "contact",
-		element: <h1>contact</h1>,
+		element: <Contact />,
 	},
 ]);
 
