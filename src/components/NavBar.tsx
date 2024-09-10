@@ -8,45 +8,42 @@ const NavBar = () => {
 	const { pathname } = useLocation();
 	const linkClassName =
 		"h-full p-3 hover:bg-black hover:text-pink border-b-solid border-b-4";
+	const getResponsiveLinkClasses = (targetPath: string) => {
+		return `${linkClassName} ${
+			pathname === targetPath
+				? !isExpanded
+					? "border-pink"
+					: "underline decoration-pink decoration-2"
+				: ""
+		} ${
+			isExpanded || pathname !== targetPath
+				? "border-background-nav hover:border-black"
+				: ""
+		}`;
+	};
 	const links = (
 		<>
 			<Link
-				className={`${linkClassName} ${
-					pathname === "/about" && !isExpanded
-						? " border-pink"
-						: "border-background-nav"
-				}`}
-				to="about"
+				className={`${getResponsiveLinkClasses("/about")}`}
+				to="/about"
 			>
 				About
 			</Link>
 			<Link
-				className={`${linkClassName} ${
-					pathname === "/work-experience" && !isExpanded
-						? " border-pink"
-						: "border-background-nav"
-				}`}
-				to="work-experience"
+				className={`${getResponsiveLinkClasses("/work-experience")}`}
+				to="/work-experience"
 			>
 				Work Experience
 			</Link>
 			<Link
-				className={`${linkClassName} ${
-					pathname === "/projects" && !isExpanded
-						? " border-pink"
-						: "border-background-nav"
-				}`}
-				to="projects"
+				className={`${getResponsiveLinkClasses("/projects")}`}
+				to="/projects"
 			>
 				Projects
 			</Link>
 			<Link
-				className={`${linkClassName} ${
-					pathname === "/contact" && !isExpanded
-						? " border-pink"
-						: "border-background-nav"
-				}`}
-				to="contact"
+				className={`${getResponsiveLinkClasses("/contact")}`}
+				to="/contact"
 			>
 				Contact
 			</Link>
