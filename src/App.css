@@ -1,3 +1,4 @@
+/* keeping this file so I can use vscode's colour picker */
 :root {
 	--background: #0c0b20;
 	--background-nav: #16153b;
@@ -8,43 +9,4 @@
 	--blue-dark: #09316e;
 	--purple: #8e55e8;
 	--purple-dark: #402669;
-}
-
-.App {
-	text-align: center;
-}
-
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
 }
