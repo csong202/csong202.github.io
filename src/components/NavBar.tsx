@@ -7,7 +7,7 @@ const NavBar = () => {
 
 	const { pathname } = useLocation();
 	const linkClassName =
-		"h-full p-3 hover:bg-black hover:text-pink border-b-solid border-b-4";
+		"h-full p-3 lg:px-5 hover:bg-black hover:text-pink border-b-solid border-b-4";
 	const getResponsiveLinkClasses = (targetPath: string) => {
 		return `${linkClassName} ${
 			pathname === targetPath
@@ -53,12 +53,12 @@ const NavBar = () => {
 		<>
 			<div className="hidden sm:flex flex-row justify-between bg-background-nav text-teal">
 				{/* TODO: add logo */}
-				<div>LOGO</div>
+				<div>LONG LOGO</div>
 				<div className="flex flex-row justify-between">{links}</div>
 			</div>
 			<div className="sm:hidden flex flex-row justify-between bg-background-nav text-teal p-3">
 				{/* TODO: add logo */}
-				<div>LOGO</div>
+				<div>LONG LOGO</div>
 				{/* https://jacobhocker.medium.com/creating-an-animated-hamburger-menu-in-nextjs-tailwind-css-9e332d428811 */}
 				<button
 					onClick={handleClick}
