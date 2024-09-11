@@ -1,4 +1,4 @@
-import React from "react";
+import { DecoratedImage } from "./index";
 import { ReactComponent as GitHubIcon } from "../icons/github.svg";
 import { ReactComponent as LinkedInIcon } from "../icons/linkedin.svg";
 
@@ -7,23 +7,27 @@ const Headshot = () => {
 	const iconClasses = "size-6 fill-blue hover:fill-pink";
 
 	return (
-		<div className="pr-6">
-			<div className="border-pink border-solid border-2 rounded-md">
-				<div className="border-blue border-solid border-2 rounded-md">
-					<img
-						src="../images/headshot.png"
-						alt="headshot"
-						className="size-40 lg:size-48"
-					></img>
-				</div>
-			</div>
-			<div className="flex flex-row justify-around w-full py-3">
-				<button className={buttonClasses}>
+		<div className="pr-6 flex flex-col align-center">
+			<DecoratedImage image={require("../images/headshot.png")} />
+			<div className="flex flex-row justify-around w-full py-3 max-w-48">
+				<a
+					className={buttonClasses}
+					href="https://github.com/csong202"
+					target="_blank"
+					rel="noreferrer"
+					title="LinkedIn Profile"
+				>
 					<GitHubIcon className={iconClasses} />
-				</button>
-				<button className={buttonClasses}>
+				</a>
+				<a
+					className={buttonClasses}
+					href="https://www.linkedin.com/in/christina-song202/"
+					target="_blank"
+					rel="noreferrer"
+					title="GitHub Profile"
+				>
 					<LinkedInIcon className={iconClasses} />
-				</button>
+				</a>
 			</div>
 		</div>
 	);

@@ -1,21 +1,26 @@
-import { Headshot, NavBar } from "../components";
+import { Content, Headshot, NavBar } from "../components";
+import textContent from "../content/aboutMeText.json";
 
 const About = () => {
+	const {
+		introHeading,
+		introContent,
+		outsideWorkHeading,
+		outsideWorkContent,
+	} = textContent;
 	return (
-		<div className="bg-background h-dvh w-dvw text-purple">
+		<div className="bg-background h-full sm:h-dvh w-dvw text-purple">
 			<NavBar />
-			<div className="flex flex-col md:flex-row justify-between p-6">
+			<div className="flex flex-col md:flex-row justify-between content-center p-6">
 				<Headshot />
-				<div>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit
-					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-					occaecat cupidatat non proident, sunt in culpa qui officia
-					deserunt mollit anim id est laborum.
-				</div>
+				<Content h1Text={introHeading} paragraphs={introContent} />
+			</div>
+			<div className="flex flex-col md:flex-row justify-between p-6">
+				<Content
+					h2Text={outsideWorkHeading}
+					paragraphs={outsideWorkContent}
+				/>
+				{/* TODO pictures */}
 			</div>
 		</div>
 	);
