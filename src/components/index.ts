@@ -1,3 +1,5 @@
+import Headshot from "./Headshot";
 import NavBar from "./NavBar";
+import PageWrapper from "./PageWrapper";
 
-export { NavBar };
+export { Headshot, NavBar, PageWrapper };
