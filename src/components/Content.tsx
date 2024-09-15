@@ -1,31 +1,34 @@
-import { ReactComponent as GitHubIcon } from "../icons/github.svg";
-
 type ContentProps = {
 	logo?: any;
 	media?: any; // TODO: projects page media?
 	h1Text?: string;
+	h1Link?: string;
+	// TODO fix bad typing
+	// h1LinkIcon?: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+	h1LinkIcon?: any;
+	h1LinkTitle?: string;
 	h2Text?: string;
 	paragraphs?: string[];
 	bulletPoints?: string[];
 	className?: string;
-	ghLink?: string;
 };
 
 const Content = (props: ContentProps) => {
 	const {
+		logo,
 		h1Text,
+		h1Link,
+		h1LinkIcon,
+		h1LinkTitle,
 		h2Text,
 		paragraphs = [],
 		bulletPoints,
 		className,
-		logo,
-		ghLink,
 	} = props;
 	const responsiveFontSizeClasses = "text-s md:text-base";
 
 	return (
 		<div className={className}>
-			{/* TODO extract company name from h1. separate headings for job title and company? */}
 			{logo && (
 				<img
 					src={logo}
@@ -38,15 +41,15 @@ const Content = (props: ContentProps) => {
 					<h1 className="text-teal text-lg sm:text-xl mr-3">
 						{h1Text}{" "}
 					</h1>
-					{ghLink && (
+					{h1Link && (
 						<a
 							className="size-max"
-							href={ghLink}
+							href={h1Link}
 							target="_blank"
 							rel="noreferrer"
-							title={`${h1Text} GitHub`}
+							title={h1LinkTitle}
 						>
-							<GitHubIcon className="size-6 fill-blue hover:fill-pink" />
+							{h1LinkIcon}
 						</a>
 					)}
 				</div>

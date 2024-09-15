@@ -12,6 +12,8 @@ const workExperience = [
 		location: "Toronto, ON, Canada",
 		description: loremIpsum,
 		logo: "intuit-turbotax.jpg",
+		link: "https://turbotax.intuit.ca/tax/pricing",
+		linkTitle: "TurboTax Canada Product and Pricing Page",
 	},
 	{
 		jobTitle: "Embedded Software Engineering Intern",
