@@ -1,5 +1,5 @@
 import { Content, Headshot, NavBar } from "../components";
-import textContent from "../content/aboutMeText.json";
+import textContent from "../content/text/about.json";
 
 const About = () => {
 	const {
