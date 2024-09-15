@@ -15,7 +15,7 @@ const Headshot = () => {
 					href="https://github.com/csong202"
 					target="_blank"
 					rel="noreferrer"
-					title="LinkedIn Profile"
+					title="GitHub Profile"
 				>
 					<GitHubIcon className={iconClasses} />
 				</a>
@@ -24,7 +24,7 @@ const Headshot = () => {
 					href="https://www.linkedin.com/in/christina-song202/"
 					target="_blank"
 					rel="noreferrer"
-					title="GitHub Profile"
+					title="LinkedIn Profile"
 				>
 					<LinkedInIcon className={iconClasses} />
 				</a>

@@ -1,11 +1,14 @@
+import { ReactComponent as GitHubIcon } from "../icons/github.svg";
+
 type ContentProps = {
 	logo?: any;
-	media?: any; // TODO: projects page
+	media?: any; // TODO: projects page media?
 	h1Text?: string;
 	h2Text?: string;
 	paragraphs?: string[];
 	bulletPoints?: string[];
 	className?: string;
+	ghLink?: string;
 };
 
 const Content = (props: ContentProps) => {
@@ -16,6 +19,7 @@ const Content = (props: ContentProps) => {
 		bulletPoints,
 		className,
 		logo,
+		ghLink,
 	} = props;
 	const responsiveFontSizeClasses = "text-s md:text-base";
 
@@ -30,7 +34,22 @@ const Content = (props: ContentProps) => {
 				></img>
 			)}
 			{h1Text && (
-				<h1 className="text-teal text-lg sm:text-xl">{h1Text}</h1>
+				<div className="flex flex-row">
+					<h1 className="text-teal text-lg sm:text-xl mr-3">
+						{h1Text}{" "}
+					</h1>
+					{ghLink && (
+						<a
+							className="size-max"
+							href={ghLink}
+							target="_blank"
+							rel="noreferrer"
+							title={`${h1Text} GitHub`}
+						>
+							<GitHubIcon className="size-6 fill-blue hover:fill-pink" />
+						</a>
+					)}
+				</div>
 			)}
 			{h2Text && <h2 className="text-blue sm:text-lg">{h2Text}</h2>}
 			{bulletPoints && (
