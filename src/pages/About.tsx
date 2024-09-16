@@ -1,5 +1,5 @@
 import { Content, Headshot } from "../components";
-import textContent from "../content/text/about.json";
+import about from "../content/text/about";
 
 const About = () => {
 	const {
@@ -7,7 +7,7 @@ const About = () => {
 		introContent,
 		outsideWorkHeading,
 		outsideWorkContent,
-	} = textContent;
+	} = about;
 	return (
 		<>
 			<div className="flex flex-col md:flex-row justify-between content-center p-6">
