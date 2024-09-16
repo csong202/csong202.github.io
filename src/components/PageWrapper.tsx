@@ -1,11 +1,16 @@
 import React from "react";
 import { NavBar } from ".";
 
-const PageWrapper = (page: JSX.Element) => {
+type PageWrapperProps = {
+	page: JSX.Element;
+};
+
+const PageWrapper = (props: PageWrapperProps) => {
+	const { page } = props;
 	return (
-		<div className="w-full h-full p-0 bg-background text-purple">
+		<div className="w-dvw h-full p-0 bg-background text-purple">
 			<NavBar />
-			{page}
+			<div className="p-8 lg:p-12 xl:p-16">{page}</div>
 		</div>
 	);
 };

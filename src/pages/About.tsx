@@ -1,4 +1,4 @@
-import { Content, Headshot, NavBar } from "../components";
+import { Content, Headshot } from "../components";
 import textContent from "../content/text/about.json";
 
 const About = () => {
@@ -9,8 +9,7 @@ const About = () => {
 		outsideWorkContent,
 	} = textContent;
 	return (
-		<div className="bg-background h-full sm:h-dvh w-dvw text-purple">
-			<NavBar />
+		<>
 			<div className="flex flex-col md:flex-row justify-between content-center p-6">
 				<Headshot />
 				<Content h1Text={introHeading} paragraphs={introContent} />
@@ -22,7 +21,7 @@ const About = () => {
 				/>
 				{/* TODO pictures */}
 			</div>
-		</div>
+		</>
 	);
 };
 

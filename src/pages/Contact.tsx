@@ -1,12 +1,5 @@
-import { NavBar } from "../components";
-
 const Contact = () => {
-	return (
-		<>
-			<NavBar />
-			Contact
-		</>
-	);
+	return <>Contact</>;
 };
 
 export default Contact;
