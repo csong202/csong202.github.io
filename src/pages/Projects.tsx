@@ -15,6 +15,7 @@ const Projects = () => {
 					h1LinkTitle={`${name} GitHub`}
 					bulletPoints={description}
 					className="mb-6"
+					key={name}
 				/>
 			))}
 		</>

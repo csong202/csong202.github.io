@@ -33,6 +33,7 @@ const WorkExperience = () => {
 							className="mb-6"
 							logo={require(`../images/${logo}`)}
 							{...linkProps}
+							key={company}
 						/>
 					);
 				}
