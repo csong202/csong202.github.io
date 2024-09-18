@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
@@ -21,6 +21,8 @@ const NavBar = () => {
 				: ""
 		}`;
 	};
+
+	const logo = <Link to="/">LONG LOGO</Link>;
 	const links = (
 		<>
 			<Link
@@ -49,16 +51,27 @@ const NavBar = () => {
 			</Link>
 		</>
 	);
+
+	useEffect(() => {
+		function handleResize() {
+			// setting isExpanded to false in case the window was resized while the nav menu was expanded
+			if (isExpanded && window.innerWidth >= 640) {
+				setIsExpanded(false);
+			}
+		}
+		window.addEventListener("resize", handleResize);
+	});
+
 	return (
 		<>
 			<div className="hidden sm:flex flex-row justify-between bg-background-nav text-teal">
 				{/* TODO: add logo */}
-				<div>LONG LOGO</div>
+				{logo}
 				<div className="flex flex-row justify-between">{links}</div>
 			</div>
 			<div className="sm:hidden flex flex-row justify-between bg-background-nav text-teal p-3">
 				{/* TODO: add logo */}
-				<div>LONG LOGO</div>
+				{logo}
 				{/* https://jacobhocker.medium.com/creating-an-animated-hamburger-menu-in-nextjs-tailwind-css-9e332d428811 */}
 				<button
 					onClick={handleClick}
