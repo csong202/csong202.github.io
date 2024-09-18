@@ -63,7 +63,7 @@ const NavBar = () => {
 	});
 
 	return (
-		<>
+		<div className="sticky top-0">
 			<div className="hidden sm:flex flex-row justify-between bg-background-nav text-teal">
 				{/* TODO: add logo */}
 				{logo}
@@ -106,7 +106,7 @@ const NavBar = () => {
 					{links}
 				</div>
 			)}
-		</>
+		</div>
 	);
 };
 
