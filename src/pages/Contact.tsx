@@ -4,7 +4,7 @@ import { Resume } from "../components";
 
 const Contact = () => {
 	const buttonClasses =
-		"size-max flex flex-row flex-wrap text-wrap text-blue hover:text-pink fill-blue hover:fill-pink";
+		"flex flex-row flex-wrap text-wrap text-blue hover:text-pink fill-blue hover:fill-pink";
 	const iconClasses = "size-6 mr-2";
 	return (
 		<>
@@ -30,7 +30,7 @@ const Contact = () => {
 					title="LinkedIn Profile"
 				>
 					<LinkedInIcon className={iconClasses} />
-					https://www.linkedin.com/in/christina-song202/
+					christina-song202
 				</a>
 			</div>
 			<p className="mt-4 mb-6">
