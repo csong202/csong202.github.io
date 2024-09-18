@@ -102,7 +102,7 @@ const NavBar = () => {
 				</button>
 			</div>
 			{isExpanded && (
-				<div className="flex sm:hidden flex-col w-full bg-background-nav text-teal border-blue border-solid">
+				<div className="flex sm:hidden flex-col w-full bg-background-nav text-teal">
 					{links}
 				</div>
 			)}
