@@ -3,8 +3,6 @@ type ContentProps = {
 	media?: any; // TODO: projects page media?
 	h1Text?: string;
 	h1Link?: string;
-	// TODO fix bad typing
-	// h1LinkIcon?: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 	h1LinkIcon?: any;
 	h1LinkTitle?: string;
 	h2Text?: string;
@@ -21,11 +19,11 @@ const Content = (props: ContentProps) => {
 		h1LinkIcon,
 		h1LinkTitle,
 		h2Text,
-		paragraphs = [],
+		paragraphs,
 		bulletPoints,
 		className,
 	} = props;
-	const responsiveFontSizeClasses = "text-s md:text-base";
+	const responsiveFontSizeClasses = "";
 
 	return (
 		<div className={className}>
@@ -64,15 +62,16 @@ const Content = (props: ContentProps) => {
 					))}
 				</ul>
 			)}
-			{paragraphs.map((paragraph) => (
-				// TODO: bad practice to have whole paragraph as key?
-				<p
-					className={`text-purple  ${responsiveFontSizeClasses}`}
-					key={paragraph}
-				>
-					{paragraph}
-				</p>
-			))}
+			{paragraphs &&
+				paragraphs.map((paragraph) => (
+					// TODO: bad practice to have whole paragraph as key?
+					<p
+						className={`text-purple  ${responsiveFontSizeClasses}`}
+						key={paragraph}
+					>
+						{paragraph}
+					</p>
+				))}
 		</div>
 	);
 };
