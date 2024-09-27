@@ -22,7 +22,15 @@ const NavBar = () => {
 		}`;
 	};
 
-	const logo = <Link to="/">LONG LOGO</Link>;
+	const logo = (
+		<Link to="/" className="h-full sm:hover:bg-black">
+			<img
+				src={require("../images/long_logo.png")}
+				alt="csong202 logo"
+				className="w-28 sm:m-2 sm:w-40 "
+			></img>
+		</Link>
+	);
 	const links = (
 		<>
 			<Link
@@ -65,12 +73,10 @@ const NavBar = () => {
 	return (
 		<div className="sticky top-0">
 			<div className="hidden sm:flex flex-row justify-between bg-background-nav text-teal">
-				{/* TODO: add logo */}
 				{logo}
 				<div className="flex flex-row justify-between">{links}</div>
 			</div>
 			<div className="sm:hidden flex flex-row justify-between bg-background-nav text-teal p-3">
-				{/* TODO: add logo */}
 				{logo}
 				{/* https://jacobhocker.medium.com/creating-an-animated-hamburger-menu-in-nextjs-tailwind-css-9e332d428811 */}
 				<button
