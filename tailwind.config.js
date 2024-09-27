@@ -19,7 +19,7 @@ module.exports = {
 		},
 		colors: {
 			background: "#0c0b20",
-			"background-nav": "#16153b",
+			"background-light": "#16153b",
 			teal: "#20bf9b",
 			"teal-light": "#6fc0ad",
 			pink: "#f043b3",

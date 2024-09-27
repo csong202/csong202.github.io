@@ -17,7 +17,7 @@ const NavBar = () => {
 				: ""
 		} ${
 			isExpanded || pathname !== targetPath
-				? "border-background-nav hover:border-black"
+				? "border-background-light hover:border-black"
 				: ""
 		}`;
 	};
@@ -72,11 +72,11 @@ const NavBar = () => {
 
 	return (
 		<div className="sticky top-0">
-			<div className="hidden sm:flex flex-row justify-between bg-background-nav text-teal">
+			<div className="hidden sm:flex flex-row justify-between bg-background-light text-teal">
 				{logo}
 				<div className="flex flex-row justify-between">{links}</div>
 			</div>
-			<div className="sm:hidden flex flex-row justify-between bg-background-nav text-teal p-3">
+			<div className="sm:hidden flex flex-row justify-between bg-background-light text-teal p-3">
 				{logo}
 				{/* https://jacobhocker.medium.com/creating-an-animated-hamburger-menu-in-nextjs-tailwind-css-9e332d428811 */}
 				<button
@@ -108,7 +108,7 @@ const NavBar = () => {
 				</button>
 			</div>
 			{isExpanded && (
-				<div className="flex sm:hidden flex-col w-full bg-background-nav text-teal">
+				<div className="flex sm:hidden flex-col w-full bg-background-light text-teal">
 					{links}
 				</div>
 			)}
