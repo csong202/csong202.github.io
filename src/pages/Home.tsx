@@ -10,9 +10,7 @@ const Home = () => {
 		<div className="bg-black p-3 text-white">
 			<p>{getTerminalPrompt("~")} cd dev/personal_website</p>
 			<p>{getTerminalPrompt("~/dev/personal_website")} cat intro.txt</p>
-			<p>
-				Hi, my name is Christina Song and this is my portfolio website
-			</p>
+			<p>Hi, my name is Christina Song and this is my personal website</p>
 			<p>{getTerminalPrompt("~/dev/personal_website")}</p>
 			<p>
 				{getTerminalPrompt("~/dev/personal_website")} cat

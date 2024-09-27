@@ -1,5 +1,14 @@
 const projects = [
 	{
+		name: "Personal Website",
+		ghLink: "https://github.com/csong202/personal_website",
+		description: [
+			"Created a frontend web application from scratch using React, Typescript, HTML, and Tailwind CSS",
+			"Implemented a mobile-desktop responsive design",
+			"Designed a logo and icon using Adobe Fresco",
+		],
+	},
+	{
 		name: "Check My Attendance",
 		ghLink: "https://github.com/diegobajetti/check-my-attendance",
 		description: [

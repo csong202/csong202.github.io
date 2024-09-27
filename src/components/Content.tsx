@@ -63,14 +63,17 @@ const Content = (props: ContentProps) => {
 				</ul>
 			)}
 			{paragraphs &&
-				paragraphs.map((paragraph) => (
-					// TODO: bad practice to have whole paragraph as key?
-					<p
-						className={`text-purple  ${responsiveFontSizeClasses}`}
-						key={paragraph}
-					>
-						{paragraph}
-					</p>
+				paragraphs.map((paragraph, i) => (
+					<>
+						{/* TODO: bad practice to have whole paragraph as key? */}
+						<p
+							className={`text-purple  ${responsiveFontSizeClasses}`}
+							key={paragraph}
+						>
+							{paragraph}
+						</p>
+						{i !== paragraphs.length - 1 && <br />}
+					</>
 				))}
 		</div>
 	);

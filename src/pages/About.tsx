@@ -19,7 +19,7 @@ const About = () => {
 					h2Text={outsideWorkHeading}
 					paragraphs={outsideWorkContent}
 				/>
-				{/* TODO pictures */}
+				{/* TODO pictures? (need to update DecoratedImage for non square images) */}
 			</div>
 		</>
 	);
