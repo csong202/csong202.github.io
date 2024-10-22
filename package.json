@@ -44,5 +44,6 @@
 	"devDependencies": {
 		"tailwindcss": "^3.4.10"
 	},
-	"license": "UNLICENSED"
+	"license": "UNLICENSED",
+	"author": "Christina Song (christina.song202@gmail.com)"
 }
