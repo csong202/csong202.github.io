@@ -5,8 +5,9 @@ type DecoratedImageProps = {
 const DecoratedImage = (props: DecoratedImageProps) => {
 	const { image } = props;
 
-	const getImgBorderClasses = (colour: string) =>
-		`border-${colour} border-solid border-2 rounded-md max-w-52 max-h-52 size-52`;
+	// TODO: fix border colour bug
+	// const getImgBorderClasses = (colour: string) =>
+	// 	`border-${colour} border-solid border-2 rounded-md max-w-52 max-h-52 size-52`;
 
 	return (
 		<>
