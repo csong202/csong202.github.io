@@ -57,18 +57,17 @@ const Content = (props: ContentProps) => {
 				<ul
 					className={`list-disc marker:text-pink ${responsiveFontSizeClasses}`}
 				>
-					{bulletPoints.map((bulletPoint) => (
-						<li key={bulletPoint}>{bulletPoint}</li>
+					{bulletPoints.map((bulletPoint, i) => (
+						<li key={i}>{bulletPoint}</li>
 					))}
 				</ul>
 			)}
 			{paragraphs &&
 				paragraphs.map((paragraph, i) => (
 					<>
-						{/* TODO: bad practice to have whole paragraph as key? */}
 						<p
 							className={`text-purple  ${responsiveFontSizeClasses}`}
-							key={paragraph}
+							key={i}
 						>
 							{paragraph}
 						</p>
