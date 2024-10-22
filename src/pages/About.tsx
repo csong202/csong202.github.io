@@ -10,11 +10,11 @@ const About = () => {
 	} = about;
 	return (
 		<>
-			<div className="flex flex-col md:flex-row justify-between content-center p-6">
+			<div className="flex flex-col md:flex-row justify-between content-center">
 				<Headshot />
 				<Content h1Text={introHeading} paragraphs={introContent} />
 			</div>
-			<div className="flex flex-col md:flex-row justify-between p-6">
+			<div className="flex flex-col md:flex-row justify-between pt-6">
 				<Content
 					h2Text={outsideWorkHeading}
 					paragraphs={outsideWorkContent}
