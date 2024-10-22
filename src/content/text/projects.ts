@@ -1,7 +1,7 @@
 const projects = [
 	{
 		name: "Personal Website",
-		ghLink: "https://github.com/csong202/personal_website",
+		ghLink: "https://github.com/csong202/csong202.github.io",
 		description: [
 			"Created a frontend web application from scratch using React, Typescript, HTML, and Tailwind CSS",
 			"Implemented a mobile-desktop responsive design",
