@@ -5,16 +5,25 @@ const Home = () => {
 			<span className="text-blue">{`${dir}$`}</span>
 		</span>
 	);
+	const getColouredCmd = (cmd: string) => {
+		return <span className="text-teal">{cmd}</span>;
+	};
 
 	return (
 		<div className="bg-black p-3 text-white">
-			<p>{getTerminalPrompt("~")} cd dev/personal_website</p>
-			<p>{getTerminalPrompt("~/dev/personal_website")} cat intro.txt</p>
+			<p>
+				{getTerminalPrompt("~")} {getColouredCmd("cd")}{" "}
+				dev/personal_website
+			</p>
+			<p>
+				{getTerminalPrompt("~/dev/personal_website")}{" "}
+				{getColouredCmd("cat")} intro.txt
+			</p>
 			<p>Hi, my name is Christina Song and this is my personal website</p>
 			<p>{getTerminalPrompt("~/dev/personal_website")}</p>
 			<p>
-				{getTerminalPrompt("~/dev/personal_website")} cat
-				quick-summary.txt
+				{getTerminalPrompt("~/dev/personal_website")}{" "}
+				{getColouredCmd("cat")} quick-summary.txt
 			</p>
 			<p>
 				{getTerminalPrompt("~/dev/personal_website")} I am a 4th year
@@ -24,7 +33,8 @@ const Home = () => {
 			</p>
 			<p>{getTerminalPrompt("~/dev/personal_website")}</p>
 			<p>
-				{getTerminalPrompt("~/dev/personal_website")} cat next-steps.txt
+				{getTerminalPrompt("~/dev/personal_website")}{" "}
+				{getColouredCmd("cat")} next-steps.txt
 			</p>
 			<p>
 				{getTerminalPrompt("~/dev/personal_website")} Feel free to take
