@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from ".";
 import { NavBar } from ".";
 
 type PageWrapperProps = {
@@ -8,11 +9,12 @@ type PageWrapperProps = {
 const PageWrapper = (props: PageWrapperProps) => {
 	const { page } = props;
 	return (
-		<div className="w-dvw min-h-dvh p-0 bg-background text-purple">
+		<div className="w-dvw min-h-dvh p-0 bg-background text-purple flex flex-col">
 			<NavBar />
-			<div className="p-8 lg:p-12 xl:p-16 text-s md:text-base">
+			<div className="p-8 lg:p-12 xl:p-16 text-s md:text-base flex-grow">
 				{page}
 			</div>
+			<Footer />
 		</div>
 	);
 };
