@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.1f073367.css",
-    "main.js": "/static/js/main.e9f89ee6.js",
+    "main.js": "/static/js/main.5a03568d.js",
     "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
     "static/media/headshot.png": "/static/media/headshot.a8c244bee0094725c4ba.png",
-    "static/media/long_logo.png": "/static/media/long_logo.9f52f404b32aaa3cf149.png",
+    "static/media/long_logo.png": "/static/media/long_logo.1dab5aa7cf96fb2983c2.png",
     "static/media/ChristinaSong_Resume.pdf": "/static/media/ChristinaSong_Resume.ae1894e8299e6374d0bf.pdf",
     "static/media/ciena.png": "/static/media/ciena.69c878ce4aa0fa1d2ef7.png",
     "static/media/intuit-turbotax.jpg": "/static/media/intuit-turbotax.1f7e3006b1c84d4441c6.jpg",
@@ -19,11 +19,11 @@
     "static/media/email.svg": "/static/media/email.9c8fc0fca92f5eb2ca6725d69e402d68.svg",
     "static/media/outside-page.svg": "/static/media/outside-page.6fcbb7bc168e4772038d403ba8f96afe.svg",
     "main.1f073367.css.map": "/static/css/main.1f073367.css.map",
-    "main.e9f89ee6.js.map": "/static/js/main.e9f89ee6.js.map",
+    "main.5a03568d.js.map": "/static/js/main.5a03568d.js.map",
     "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f073367.css",
-    "static/js/main.e9f89ee6.js"
+    "static/js/main.5a03568d.js"
   ]
 }
