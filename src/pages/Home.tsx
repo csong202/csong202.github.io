@@ -10,7 +10,7 @@ const Home = () => {
 	};
 
 	return (
-		<div className="bg-black p-3 text-white">
+		<div className="bg-black p-3 text-white [text-size-adjust:none]">
 			<p>
 				{getTerminalPrompt("~")} {getColouredCmd("cd")}{" "}
 				dev/personal_website
