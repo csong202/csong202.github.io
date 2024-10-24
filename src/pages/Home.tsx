@@ -2,7 +2,10 @@ const Home = () => {
 	const getTerminalPrompt = (dir: string) => (
 		<span>
 			<span className="text-pink">csong202@Yoga7i:</span>
-			<span className="text-blue">{`${dir}$`}</span>
+			<span className="text-blue">
+				{/* using in line paragraph so it shows as one line on big screens and doesn't overflow on mobile */}
+				<p className="inline">{`${dir}$`}</p>
+			</span>
 		</span>
 	);
 	const getColouredCmd = (cmd: string) => {
