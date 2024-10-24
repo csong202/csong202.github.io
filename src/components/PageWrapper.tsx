@@ -11,7 +11,7 @@ const PageWrapper = (props: PageWrapperProps) => {
 	return (
 		<div className="w-dvw min-h-dvh p-0 bg-background text-purple flex flex-col">
 			<NavBar />
-			<div className="p-8 lg:p-12 xl:p-16 text-s md:text-base flex-grow">
+			<div className="p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 text-s md:text-base flex-grow">
 				{page}
 			</div>
 			<Footer />

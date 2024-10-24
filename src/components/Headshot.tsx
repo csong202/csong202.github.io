@@ -7,9 +7,9 @@ const Headshot = () => {
 	const iconClasses = "size-6 fill-blue hover:fill-pink";
 
 	return (
-		<div className="pr-6 flex flex-col align-center">
+		<div className="pr-6 flex flex-col align-center max-w-48">
 			<DecoratedImage image={require("../images/headshot.png")} />
-			<div className="flex flex-row justify-around w-full py-3 max-w-48">
+			<div className="flex flex-row justify-around w-full py-3">
 				<a
 					className={buttonClasses}
 					href="https://github.com/csong202"

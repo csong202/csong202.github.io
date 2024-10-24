@@ -10,7 +10,7 @@ const About = () => {
 	} = about;
 	return (
 		<>
-			<div className="flex flex-col md:flex-row justify-between content-center">
+			<div className="flex flex-col md:flex-row justify-between items-center">
 				<Headshot />
 				<Content h1Text={introHeading} paragraphs={introContent} />
 			</div>
