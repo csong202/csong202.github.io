@@ -3,34 +3,55 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
 	const [isExpanded, setIsExpanded] = useState(false);
+	const [showPinkLogo, setShowPinkLogo] = useState(false);
+
 	const handleClick = () => setIsExpanded(!isExpanded);
+	const handleMouseEnter = () => setShowPinkLogo(true);
+	const handleMouseLeave = () => setShowPinkLogo(false);
 
 	const { pathname } = useLocation();
+
+	const logoClasses = "w-28 sm:m-2 sm:w-32";
+	const logo = (
+		<Link
+			to="/"
+			className="h-full sm:hover:bg-black"
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
+		>
+			{showPinkLogo ? (
+				<img
+					src={require("../images/long_logo_pink.png")}
+					alt="csong202 logo in pink"
+					className={logoClasses}
+				></img>
+			) : (
+				<img
+					src={require("../images/long_logo.png")}
+					alt="csong202 logo"
+					className={logoClasses}
+				></img>
+			)}
+		</Link>
+	);
+
 	const linkClassName =
-		"h-full p-3 lg:px-5 hover:bg-black hover:text-pink border-b-solid border-b-4";
+		"h-full p-3 pb-2 lg:px-5 hover:bg-black hover:text-pink border-b-solid border-b-4";
 	const getResponsiveLinkClasses = (targetPath: string) => {
 		return `${linkClassName} ${
+			// >= md: show pink bottom border on link of current page, < md: pink text underline on expanded menu
 			pathname === targetPath
 				? !isExpanded
 					? "border-pink"
 					: "underline decoration-pink decoration-2"
 				: ""
 		} ${
+			// >= md: black bg on hover, < md: no black bg on hover
 			isExpanded || pathname !== targetPath
 				? "border-background-light hover:border-black"
 				: ""
 		}`;
 	};
-
-	const logo = (
-		<Link to="/" className="h-full sm:hover:bg-black">
-			<img
-				src={require("../images/long_logo.png")}
-				alt="csong202 logo"
-				className="w-28 sm:m-2 sm:w-40 "
-			></img>
-		</Link>
-	);
 	const links = (
 		<>
 			<Link
