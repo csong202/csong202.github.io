@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { HamburgerMenu } from ".";
 
 const NavBar = () => {
 	const [isExpanded, setIsExpanded] = useState(false);
@@ -99,34 +100,10 @@ const NavBar = () => {
 			</div>
 			<div className="sm:hidden flex flex-row justify-between bg-background-light text-teal p-3">
 				{logo}
-				{/* https://jacobhocker.medium.com/creating-an-animated-hamburger-menu-in-nextjs-tailwind-css-9e332d428811 */}
-				<button
-					onClick={handleClick}
-					className="flex flex-col justify-center items-center"
-				>
-					<span
-						className={`bg-blue block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm ${
-						isExpanded
-							? "rotate-45 translate-y-1"
-							: "-translate-y-0.5"
-					}`}
-					></span>
-					<span
-						className={`bg-blue block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm my-0.5 ${
-						isExpanded ? "opacity-0" : "opacity-100"
-					}`}
-					></span>
-					<span
-						className={`bg-blue block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm ${
-						isExpanded
-							? "-rotate-45 -translate-y-1"
-							: "translate-y-0.5"
-					}`}
-					></span>
-				</button>
+				<HamburgerMenu
+					isExpanded={isExpanded}
+					handleClick={handleClick}
+				/>
 			</div>
 			{isExpanded && (
 				<div className="flex sm:hidden flex-col w-full bg-background-light text-teal">
