@@ -13,7 +13,7 @@ const Home = () => {
 	};
 
 	return (
-		<div className="bg-black p-2 text-white text-wrap text-sm leading-7">
+		<div className="w-full bg-black p-2 text-white text-wrap text-sm leading-7">
 			<p>
 				{getTerminalPrompt("~")} {getColouredCmd("cd")}{" "}
 				dev/personal_website
