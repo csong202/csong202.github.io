@@ -23,7 +23,7 @@ module.exports = {
 			teal: "#20bf9b",
 			pink: "#f043b3",
 			blue: "#2bc3f4",
-			purple: "#8e55e8",
+			purple: "#9e61ff",
 			black: "#000000",
 			white: "#ffffff",
 		},
