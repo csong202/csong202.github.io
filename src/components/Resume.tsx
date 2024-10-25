@@ -8,7 +8,7 @@ const Resume = () => {
 				title="Christina Song Resume"
 				className="h-96 xs:h-128 sm:h-144 md:h-176 lg:h-176 w-72 xs:w-112 sm:w-144 md:w-160"
 			></object>
-			<p>Last updated: 2024/09/20</p>
+			<p>Last updated: 2024/10/25</p>
 		</div>
 	);
 };
