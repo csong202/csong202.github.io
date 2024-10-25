@@ -3,7 +3,7 @@ import { ReactComponent as HomeIcon } from "../icons/home.svg";
 import { ReactComponent as TextFileIcon } from "../icons/text-file.svg";
 
 const Home = () => {
-	const iconClasses = "size-6 fill-blue hover:fill-pink inline pr-2";
+	const iconClasses = "size-6 fill-pink inline pr-2";
 
 	const directory = (
 		indent: number,
@@ -11,7 +11,13 @@ const Home = () => {
 		name: string
 	) => (
 		<div
-			className={icon === "folder" || icon === "home" ? "text-teal" : ""}
+			className={
+				icon === "home"
+					? "text-teal"
+					: icon === "folder"
+					? "text-blue"
+					: ""
+			}
 		>
 			<span>{"\u00A0\u00A0".repeat(indent)}</span>
 			{icon === "home" ? (
