@@ -48,5 +48,6 @@
 		"tailwindcss": "^3.4.10"
 	},
 	"license": "UNLICENSED",
-	"author": "Christina Song (christina.song202@gmail.com)"
+	"author": "Christina Song (christina.song202@gmail.com)",
+	"homepage": "https://csong202.github.io/"
 }
